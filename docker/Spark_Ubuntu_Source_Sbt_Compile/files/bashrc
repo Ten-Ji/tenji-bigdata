@@ -1,0 +1,22 @@
+alias ll='ls -lhAF'
+
+export JAVA_HOME=/opt/jdk
+
+export SCALA_HOME=/opt/scala
+export PATH=$PATH:$SCALA_HOME/bin
+
+export SBT_HOME=/opt/sbt
+export PATH=$PATH:$SBT_HOME/bin
+
+export HADOOP_INSTALL=/opt/hadoop
+export HADOOP_HOME=$HADOOP_INSTALL
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HADOOP_INSTALL/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_HOME=$HADOOP_INSTALL
+export HADOOP_HDFS_HOME=$HADOOP_INSTALL
+export HADOOP_CONF_DIR=$HADOOP_INSTALL/etc/hadoop
+
+export YARN_HOME=$HADOOP_INSTALL
+export YARN_CONF_DIR=$HADOOP_INSTALL/etc/hadoop
+

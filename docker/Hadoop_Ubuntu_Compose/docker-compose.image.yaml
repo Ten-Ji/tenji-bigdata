@@ -1,0 +1,50 @@
+version: '2.0'
+services:
+  base:
+    build:
+      context: ./base/
+      dockerfile: Dockerfile
+    image: tenji/base
+  hadoop-base:
+    build:
+      context: ./hadoop-base/
+      dockerfile: Dockerfile
+    image: tenji/hadoop-base
+    depends_on:
+      - base
+  hadoop-master:
+    build:
+      context: ./hadoop-master/
+      dockerfile: Dockerfile
+    image: tenji/hadoop-master
+    depends_on:
+      - hadoop-base
+  hadoop-slave:
+    build:
+      context: ./hadoop-slave/
+      dockerfile: Dockerfile
+    image: tenji/hadoop-slave
+    depends_on:
+      - hadoop-base
+  hbase-base:
+    build:
+      context: ./hbase-base/
+      dockerfile: Dockerfile
+    image: tenji/hbase-base
+    depends_on:
+      - hadoop-base
+  hbase-master:
+    build:
+      context: ./hbase-master/
+      dockerfile: Dockerfile
+    image: tenji/hbase-master
+    depends_on:
+      - hbase-base
+  hbase-slave:
+    build:
+      context: ./hbase-slave/
+      dockerfile: Dockerfile
+    image: tenji/hbase-slave
+    depends_on:
+      - hbase-base
+

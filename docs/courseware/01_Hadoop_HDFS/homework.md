@@ -30,7 +30,7 @@ ssh 本节点主机名，ssh 其他节点A主机名，ssh 其他节点B主机名
 5) 在用户自动加载脚本中 ~/.bashrc 中添加 hadoop 需要使用的系统环境变量<br>
 可参照 /root/.bashrc<br>
 6) 修改 /opt 中 hadoop 相关资源的拥有者为 hadoop<br>
-7) 修改 core-site.xml，hdfs-site.xml，调整数据保留为 /home/xenron/hadoop-data/ 目录<br>
+7) 修改 core-site.xml，hdfs-site.xml，调整数据保留为 /home/hadoop/hadoop-data/ 目录<br>
 8) 格式化 HDFS 系统<br>
 9) 启动 HDFS，启动 Yarn<br>
 10) 确认各 Web UI 的运行状态<br>
@@ -45,11 +45,11 @@ ssh 本节点主机名，ssh 其他节点A主机名，ssh 其他节点B主机名
 1) 在 VirtualBox 软件环境中，新建3个虚拟机节点<br>
 2) 在新建立的3个虚拟机节点中，分别安装 CentOS 6.7 操作系统<br>
 参考资料<br>
-https://github.com/tenji-home/Big-Data/blob/master/01_Guide/environment/Manual/OS_CentOS_6.7.pdf<br>
+https://github.com/tenji-home/Big-Data/blob/master/docs/manual/OS_CentOS_6.7.pdf<br>
 3) 按照 NameNode，DataNode-1，DataNode-2 方式进行 Hadoop 集群环境部署<br>
 参考资料<br>
 （下面资料为Ubuntu环境下Hadoop的搭建方法，CentOS的软件安装方法稍有区别，需要自己查询相关资料）<br>
-https://github.com/tenji-home/Big-Data/blob/master/01_Guide/environment/Manual/Hadoop_Ubuntu_14.04.pdf<br>
+https://github.com/tenji-home/Big-Data/blob/master/docs/manual/Hadoop_Ubuntu_14.04.pdf<br>
 
 # Docker 环境部署
 
@@ -58,7 +58,7 @@ https://github.com/tenji-home/Big-Data/blob/master/01_Guide/environment/Manual/H
 
 1) 安装 Docker 环境<br>
 参考资料<br>
-https://github.com/tenji-home/Big-Data/blob/master/01_Guide/01_Hadoop/docker.pdf<br>
+https://github.com/tenji-home/Big-Data/blob/master/docs/manual/Docker.pdf<br>
 2) 确认 Docker 环境正常运行<br>
 参考资料<br>
 输入 docker ，确认是否有帮助信息返回<br>
@@ -68,10 +68,10 @@ https://github.com/tenji-home/Big-Data/blob/master/01_Guide/01_Hadoop/docker.pdf
 1) 按照下面命令，下载 docker 环境脚本<br>
 ```bash
 git clone https://github.com/tenji-home/Big-Data.git
-cd Big-Data/01_Guide/environment/docker/Hadoop_Ubuntu_Compose/
+cd Big-Data/docker/Hadoop_Ubuntu_Compose/
 ```
 2) 按照下面页面进行部署、确认<br>
-https://github.com/tenji-home/Big-Data/blob/master/01_Guide/environment/docker/Hadoop_Ubuntu_Compose/README.md<br>
+https://github.com/tenji-home/Big-Data/blob/master/docker/Hadoop_Ubuntu_Compose/README.md<br>
 
 
 # Cloudera QuickStart 环境部署
@@ -80,6 +80,5 @@ https://github.com/tenji-home/Big-Data/blob/master/01_Guide/environment/docker/H
 预计时间：30 minus<br>
 
 部署 QuickStart VirtualBox Image<br>
-https://www.cloudera.com/downloads/quickstart_vms/5-8.html<br>
-https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.8.0-0-virtualbox.zip<br>
+https://www.cloudera.com/downloads/quickstart_vms.html<br>
 

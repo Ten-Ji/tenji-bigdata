@@ -19,9 +19,11 @@ docker-compose -f docker-compose.hadoop-container.yaml up -d
 ## Clean up
 
 ```bash
+# stop container
 docker-compose -f docker-compose.hadoop-container.yaml stop
+# remove container
 docker-compose -f docker-compose.hadoop-container.yaml rm
-
+# stop container & remove container
 docker-compose -f docker-compose.hadoop-container.yaml  down
 ```
 

@@ -1,6 +1,7 @@
 alias ll='ls -lhAF'
 
-export JAVA_HOME=/opt/jdk
+# export JAVA_HOME=/opt/jdk
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 export HADOOP_INSTALL=/opt/hadoop
 export HADOOP_HOME=$HADOOP_INSTALL

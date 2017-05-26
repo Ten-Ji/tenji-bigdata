@@ -1,4 +1,10 @@
 
+Share @ BaiduYun
+```
+Á´½Ó: https://pan.baidu.com/s/1i4Q1QAh
+ÃÜÂë: a66t
+```
+
 # Ubuntu
 username:root<br>
 password:ubuntu<br>

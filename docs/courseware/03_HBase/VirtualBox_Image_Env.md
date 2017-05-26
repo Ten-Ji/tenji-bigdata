@@ -1,8 +1,8 @@
 
 Share @ BaiduYun
 ```
-Á´½Ó: https://pan.baidu.com/s/1i4Q1QAh
-ÃÜÂë: a66t
+é“¾æ¥: https://pan.baidu.com/s/1i4Q1QAh
+å¯†ç : a66t
 ```
 
 # Ubuntu
